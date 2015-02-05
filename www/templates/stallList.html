@@ -1,0 +1,13 @@
+﻿<ion-view view-title="Stalls" class="bar-header bar-energized">
+    <ion-content >
+        <ion-list>
+            <ion-item ng-repeat="stall in stalls" href="#/app/stalls/{{stall.id}}" class="list-group-item-heading">
+                <img ng-src="{{stall.logo}}" style="width: 50px; height: 50px"/>
+                <img ng-src="{{stall.ImageLogo}}" style="width: 50px; height: 50px"/>
+                <b>{{stall.name}}</b><br/>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {{stall.sub}}<br/>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>
